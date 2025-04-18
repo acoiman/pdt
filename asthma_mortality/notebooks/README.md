@@ -1,5 +1,5 @@
 
 # Folder Content
-* notebooks: Jupyter Noteboks using Python
+* colab: Jupyter Noteboks using Google Colaboratory
 * r_notebooks: Notebooks using R
 
