@@ -32,7 +32,7 @@ To deploy, follow these instructions (only for Linux OS):
 * Create and start a new Docker container from the image with the following command:
 
 ```bash
-   run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work acoiman/pdt_docker:1.0
+   docker run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work acoiman/pdt_docker:1.0
 ```
 
 * Go to our [Colab Notebooks](https://github.com/acoiman/pdt/tree/main/asthma_mortality/notebooks/colab) and enter the desired Notebook. Click on *Open in Colab* icon.
