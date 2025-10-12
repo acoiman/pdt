@@ -1,4 +1,0 @@
-
-# Folder Content
-R Notebooks
-
