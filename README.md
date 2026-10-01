@@ -45,7 +45,7 @@ To deploy, follow these instructions:
 
 ## 🪟 Deployment for Windows
 
-Comming soon...
+Coming soon...
 
 
 ## Author
@@ -54,4 +54,4 @@ Comming soon...
 
 ## License
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)
+[CC BY .0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
