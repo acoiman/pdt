@@ -1,47 +1,72 @@
+# Scripts and notebooks used for the Ph.D. thesis
 
-# Scripts and Noteboks used for the Ph.D Thesis: "Asma y variables ambientales - un enfoque basado en el uso de datos geoespaciales y aprendizaje automático"
+## "Asma y variables ambientales - un enfoque basado en el uso de datos geoespaciales y aprendizaje automático"
 
-* asthma_mortality
-* asthma_risk
-* docker
+This repository contains the scripts and notebooks used for the Ph.D. thesis project focused on asthma and environmental variables using geospatial data and machine learning.
+
+### Included folders
+
+- `asthma_mortality`
+- `asthma_risk`
+- `docker`
+
+---
 
 ## Deployment
 
-To deploy, follow these instructions (only for Linux OS):
+To deploy the project on Linux, follow the instructions below.
 
-* Download the compressed data at https://drive.google.com/file/d/1tKJhMm-gB1tnEofk5mULjB3ieigqzN0F/view?usp=sharing
+### 1) Download the dataset
 
-* Uncompress the file in your local home folder.
+Download the compressed data from:
 
-* Change the folder permissions by running the following command:
+https://drive.google.com/file/d/1tKJhMm-gB1tnEofk5mULjB3ieigqzN0F/view?usp=sharing
 
-```bash
-  chgrp -R users pdt && chmod -R g+rw pdt
-```
+Uncompress the file in your local home folder.
 
-* Install Docker on your local machine.
+### 2) Adjust folder permissions
 
-* Pull the Docker image with the following command:
+Run the following command:
 
 ```bash
-  docker pull acoiman/pdt_rpy:1.0
+chgrp -R users pdt && chmod -R g+rw pdt
 ```
 
-### For Google Colab Jupyter Notebooks
+### 3) Install Docker
 
-* Create and start a new Docker container from the image with the following command:
+Install Docker on your local machine.
+
+### 4) Pull the Docker image
 
 ```bash
-   docker run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work acoiman/pdt_rpy:1.0
+docker pull acoiman/pdt_rpy:1.0
 ```
 
-* Go to our [Colab Notebooks](https://github.com/acoiman/pdt/tree/main/asthma_mortality/notebooks/colab) and enter the desired Notebook. Click on *Open in Colab* icon.
+---
 
-* On *Connect* choose *Connect to a local runtime* and enter the following backend URL:
+## Google Colab Jupyter notebooks
+
+### Start a Docker container
+
+Create and start a new Docker container from the image with the following command:
 
 ```bash
-   http://127.0.0.1:8888/tree?token=mytoken12345
+docker run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work acoiman/pdt_rpy:1.0
 ```
+
+### Open a notebook in Colab
+
+1. Go to the [Colab notebooks](https://github.com/acoiman/pdt/tree/main/asthma_mortality/notebooks/colab) folder.
+2. Open the desired notebook.
+3. Click the "Open in Colab" icon.
+4. In the connection dialog, choose "Connect to a local runtime".
+5. Enter the following backend URL:
+
+```bash
+http://127.0.0.1:8888/tree?token=mytoken12345
+```
+
+---
 
 ## Author
 
@@ -50,4 +75,3 @@ To deploy, follow these instructions (only for Linux OS):
 ## License
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)
-
